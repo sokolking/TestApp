@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_post_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Text.Bold.12"
+            android:textColor="@color/text_hint_color"
+            android:visibility="visible"
+            tools:text="postId" />
+
+        <TextView
+            android:id="@+id/tv_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Text.Bold.12"
+            android:textColor="@color/text_hint_color"
+            android:visibility="visible"
+            tools:text="id" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Text.Bold.12"
+            android:textColor="@color/text_hint_color"
+            android:visibility="visible"
+            tools:text="name" />
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Text.Bold.12"
+            android:textColor="@color/text_hint_color"
+            android:visibility="visible"
+            tools:text="email" />
+
+        <TextView
+            android:id="@+id/tv_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Text.Bold.12"
+            android:textColor="@color/text_hint_color"
+            android:visibility="visible"
+            tools:text="body" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

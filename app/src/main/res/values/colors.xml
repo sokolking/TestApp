@@ -13,4 +13,8 @@
     <color name="white_50">#80FFFFFF</color>
 
     <color name="text_hint_color">#7B7B7B</color>
+
+    <color name="text_color">#030405</color>
+
+    <color name="flush_orange">#FF7A00</color>
 </resources>

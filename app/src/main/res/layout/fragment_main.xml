@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/v_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_lower_bound"
+            style="@style/DesignLibrary.TextInputLayout"
+            android:theme="@style/TextInputLayoutTheme">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_lower_bound"
+                style="@style/DesignLibrary.TextInputEditText"
+                android:hint="@string/main_lower_bound"
+                android:inputType="number"
+                android:maxLength="10" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_upper_bound"
+            style="@style/DesignLibrary.TextInputLayout"
+            android:layout_marginTop="8dp"
+            android:theme="@style/TextInputLayoutTheme">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_upper_bound"
+                style="@style/DesignLibrary.TextInputEditText"
+                android:hint="@string/main_upper_bound"
+                android:inputType="number"
+                android:maxLength="10" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_search"
+            style="@style/OrangeButton"
+            android:layout_width="match_parent"
+            android:layout_marginTop="16dp"
+            android:text="@string/main_search_button" />
+
+    </LinearLayout>
+
+    <com.test.testapp.view.LoadingView
+        android:id="@+id/v_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_content" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

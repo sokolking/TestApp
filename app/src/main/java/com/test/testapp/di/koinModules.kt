@@ -5,12 +5,14 @@ import com.test.testapp.di.core.filesModule
 import com.test.testapp.di.core.navigationModule
 import com.test.testapp.di.interactors.commentInteractorModule
 import com.test.testapp.features.launcher.launcherModule
-import com.test.testapp.features.other.otherModule
+import com.test.testapp.features.main.mainModule
+import com.test.testapp.features.search.searchModule
 import org.koin.core.module.Module
 
 private val featureModules: List<Module> = listOf(
     launcherModule,
-    otherModule
+    mainModule,
+    searchModule
 )
 
 private val coreModules: List<Module> = listOf(

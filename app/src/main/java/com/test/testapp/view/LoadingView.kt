@@ -29,7 +29,7 @@ class LoadingView @JvmOverloads constructor(
         )
         progress.isIndeterminate = true
         ViewCompat.setElevation(this, 16.dpToPx.toFloat())
-        setBackgroundColor(resColor(R.color.black_50))
+        setBackgroundColor(resColor(R.color.transparent))
         isClickable = true
     }
 }

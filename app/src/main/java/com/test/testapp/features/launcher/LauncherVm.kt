@@ -2,7 +2,7 @@ package com.test.testapp.features.launcher
 
 import android.os.Bundle
 import com.test.testapp.base.vm.BaseVm
-import com.test.testapp.features.other.OtherRoute
+import com.test.testapp.features.main.MainRoute
 
 class LauncherVm : BaseVm<LauncherState>() {
 
@@ -10,7 +10,7 @@ class LauncherVm : BaseVm<LauncherState>() {
 
     fun onActivityCreated(savedState: Bundle?) {
         if (savedState == null) {
-            router.newRootScreen(OtherRoute.withDefaultAnim())
+            router.newRootScreen(MainRoute.withDefaultAnim())
         }
     }
 

@@ -68,20 +68,28 @@ fun View.setRoundedBgWithColor(
     }
 }
 
+fun TextInputLayout.showTextInputError(hasError: Boolean, errorMessage: Int) {
+    if (hasError) {
+        error = context.getString(errorMessage)
+    }
+    isErrorEnabled = hasError
+}
+
 fun EditText.afterTextChanged(
     textInputLayout: TextInputLayout,
     action: (text: Editable?) -> Unit
 ) {
+    val filledColor = resColorState(R.color.color_input_border_text_entered)
+    val emptyColor = resColorState(R.color.color_input_border)
     doAfterTextChanged {
-        if (!it.isNullOrEmpty()) {
-            val blueColor = resColorState(R.color.color_input_border_text_entered)
-            textInputLayout.setBoxStrokeColorStateList(blueColor)
-            textInputLayout.defaultHintTextColor = blueColor
+        textInputLayout.isErrorEnabled = false
+        val color = if (!it.isNullOrEmpty()) {
+            filledColor
         } else {
-            val defaultColor = resColorState(R.color.color_input_border)
-            textInputLayout.setBoxStrokeColorStateList(defaultColor)
-            textInputLayout.defaultHintTextColor = defaultColor
+            emptyColor
         }
+        textInputLayout.setBoxStrokeColorStateList(color)
+        textInputLayout.defaultHintTextColor = color
         action(it)
     }
 }

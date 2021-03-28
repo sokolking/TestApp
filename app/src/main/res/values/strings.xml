@@ -5,4 +5,21 @@
     <string name="error_common">Something went wrong. Please, try again.</string>
     <!--endregion-->
 
+    <!--Main-->
+    <string name="main_lower_bound">Lower bound</string>
+    <string name="main_bound_error">field should be filled</string>
+    <string name="main_lower_bound_error">lower bound should be less than upper bound</string>
+    <string name="main_upper_bound">Upper bound</string>
+    <string name="main_upper_bound_error">upper bound should be more than lower bound</string>
+    <string name="main_search_button">Search</string>
+    <!--endregion-->
+
+    <!--Comment item-->
+    <string name="comment_item_post_id">Post id: %d</string>
+    <string name="comment_item_id">Id: %d</string>
+    <string name="comment_item_name">Name: %s</string>
+    <string name="comment_item_email">Email: %s</string>
+    <string name="comment_item_body">Body: %s</string>
+    <!--endregion-->
+
 </resources>
