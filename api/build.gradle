@@ -1,0 +1,22 @@
+apply from: '../androidModule.gradle'
+apply plugin: "kotlin-kapt"
+
+dependencies {
+
+    implementation project(":domain")
+
+    //retrofit
+    api "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion"
+
+    //okhttp
+    api "com.squareup.okhttp3:okhttp:$okhttpVersion"
+    api "com.squareup.okhttp3:logging-interceptor:$okhttpVersion"
+
+    //dagger
+    api "com.google.dagger:dagger:$daggerVersion"
+    kapt "com.google.dagger:dagger-compiler:$daggerVersion"
+
+}

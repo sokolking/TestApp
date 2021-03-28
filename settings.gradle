@@ -1,3 +1,6 @@
+include ':i_comment'
+include ':domain'
+include ':api'
 include ':navigation'
 include ':base'
 include ':app'

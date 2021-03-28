@@ -1,0 +1,9 @@
+apply from: '../androidModule.gradle'
+apply plugin: "kotlin-kapt"
+apply plugin: "kotlin-android-extensions"
+
+dependencies {
+
+    //gson
+    implementation "com.google.code.gson:gson:$gsonVersion"
+}

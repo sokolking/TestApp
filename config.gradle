@@ -40,6 +40,15 @@ ext {
     //coil
     coilVersion = '1.1.0'
 
+    //retrofit
+    retrofitVersion = '2.9.0'
+
+    //okhttp
+    okhttpVersion = '4.9.0'
+
+    //dagger
+    daggerVersion = '2.30.1'
+
     //koin
     koinVersion = '2.1.6'
 

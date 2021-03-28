@@ -15,6 +15,7 @@ class OtherFragment : BaseFragment(R.layout.fragment_other) {
         initInsets()
         initListeners()
         bindProperties()
+        vm.afterCreate()
     }
 
     override fun onDestroyView() {

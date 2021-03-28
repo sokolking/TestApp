@@ -24,17 +24,9 @@ android {
     }
 
     buildTypes {
-        debug {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            buildConfigField "String", "DeepLinkHost", '"https://telldev.page.link"'
-            buildConfigField "String", "IosPackage", '"glamorous.goat.nl.Tell.dev"'
-        }
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            buildConfigField "String", "DeepLinkHost", '"https://telldev.page.link"' //TODO release
-            buildConfigField "String", "IosPackage", '"glamorous.goat.nl.Tell"'
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
         canary {
             initWith debug
@@ -45,9 +37,11 @@ android {
     productFlavors {
         prod {
             dimension "environment"
+            buildConfigField("String", "API", "\"https://jsonplaceholder.typicode.com/\"")
         }
         dev {
             dimension "environment"
+            buildConfigField("String", "API", "\"https://jsonplaceholder.typicode.com/\"")
         }
     }
     compileOptions {
@@ -64,18 +58,9 @@ dependencies {
     //modules
     implementation project(":base")
     implementation project(":navigation")
-//    implementation project(":domain")
-//    implementation project(":storage")
-//    implementation project(":network")
-//    implementation project(":i_location")
-//    implementation project(":i_retailers")
-//    implementation project(":i_advertisements")
-//    implementation project(":i_deeplinks")
-//    implementation project(":i_auth")
-//    implementation project(':i_upload')
-//    implementation project(':i_user')
-//    implementation project(':i_faq')
-//    implementation project(':i_billing')
+    implementation project(":domain")
+    implementation project(":api")
+    implementation project(":i_comment")
 
     //kotlin
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion"
