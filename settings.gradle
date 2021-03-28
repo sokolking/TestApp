@@ -1,2 +1,4 @@
+include ':navigation'
+include ':base'
 include ':app'
 rootProject.name = "TestApp"

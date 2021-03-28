@@ -1,0 +1,14 @@
+apply from: '../androidModule.gradle'
+
+apply plugin: 'kotlin-android-extensions'
+
+dependencies {
+
+    implementation "androidx.core:core-ktx:$kotlixExtVersion"
+
+    //appcompat
+    implementation "androidx.appcompat:appcompat:$xVersion"
+
+    //cicerone
+    api "com.github.terrakok:cicerone:$ciceroneVersion"
+}

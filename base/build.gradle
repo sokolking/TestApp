@@ -1,0 +1,16 @@
+apply from: '../androidBaseModule.gradle'
+
+dependencies {
+
+    //kotlin
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$kotlinCoroutinesVersion"
+    implementation "androidx.core:core-ktx:$kotlixExtVersion"
+
+    //appcompat
+    implementation "androidx.appcompat:appcompat:$xVersion"
+    implementation "com.google.android.material:material:$xMaterial"
+    implementation "androidx.fragment:fragment-ktx:$xFragment"
+
+    //exif
+    implementation "androidx.exifinterface:exifinterface:$xExif"
+}

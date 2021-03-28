@@ -1,0 +1,8 @@
+apply from: '../androidBaseModule.gradle'
+
+dependencies {
+    implementation project(":base")
+
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$kotlinCoroutinesVersion"
+    implementation "androidx.core:core-ktx:$kotlixExtVersion"
+}
