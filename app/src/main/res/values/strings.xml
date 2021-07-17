@@ -32,6 +32,9 @@
     <!--Explorer-->
     <string name="explorer_title">Explorer</string>
     <string name="search_hint">Senior Project Manager, London</string>
+    <string name="find_jobs_title">Find Jobs</string>
+    <string name="help_others_title">Help Others</string>
+    <string name="find_candidates_title">Find Candidates</string>
     <!--endregion-->
 
 </resources>
