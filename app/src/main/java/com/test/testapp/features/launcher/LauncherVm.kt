@@ -3,6 +3,7 @@ package com.test.testapp.features.launcher
 import android.os.Bundle
 import com.test.testapp.base.vm.BaseVm
 import com.test.testapp.features.main.MainRoute
+import com.test.testapp.features.main_flow.MainFlowRoute
 
 class LauncherVm : BaseVm<LauncherState>() {
 
@@ -10,7 +11,7 @@ class LauncherVm : BaseVm<LauncherState>() {
 
     fun onActivityCreated(savedState: Bundle?) {
         if (savedState == null) {
-            router.newRootScreen(MainRoute.withDefaultAnim())
+            router.newRootScreen(MainFlowRoute.withDefaultAnim())
         }
     }
 

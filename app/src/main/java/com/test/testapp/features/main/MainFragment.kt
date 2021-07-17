@@ -8,7 +8,7 @@ import com.test.testapp.base.properties.bind
 import com.test.testapp.base.properties.bindLoader
 import com.test.testapp.ext.afterTextChanged
 import com.test.testapp.ext.hideKeyboard
-import com.test.testapp.ext.initDefaultInsetesFragment
+import com.test.testapp.ext.initDefaultInsetsFragment
 import com.test.testapp.ext.showTextInputError
 import kotlinx.android.synthetic.main.fragment_main.*
 import org.koin.android.viewmodel.ext.android.viewModel
@@ -62,6 +62,6 @@ class MainFragment : BaseFragment(R.layout.fragment_main) {
     }
 
     private fun initInsets() {
-        initDefaultInsetesFragment(v_root)
+        initDefaultInsetsFragment(v_root)
     }
 }

@@ -25,7 +25,7 @@ fun BottomSheetDialogFragment.setTopRoundedBgWithColor(
     }
 }
 
-fun initDefaultInsetesFragment(root: View) {
+fun initDefaultInsetsFragment(root: View) {
     root.doOnApplyWindowInsets { view, insets ->
         view.updatePadding(
             top = insets.systemWindowInsetTop,

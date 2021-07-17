@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_home"
+        android:checked="true"
+        android:icon="@drawable/ic_home"
+        android:title="@string/main_flow_tab_home" />
+
+    <item
+        android:id="@+id/action_explorer"
+        android:icon="@drawable/ic_explorer"
+        android:title="@string/main_flow_tab_explorer" />
+
+    <item
+        android:id="@+id/action_net_of_nets"
+        android:icon="@drawable/ic_net_of_nets"
+        android:title="@string/main_flow_tab_net_of_nets" />
+
+    <item
+        android:id="@+id/action_activity"
+        android:icon="@drawable/ic_activity"
+        android:title="@string/main_flow_tab_activity" />
+
+    <item
+        android:id="@+id/action_post_a_job"
+        android:icon="@drawable/ic_post_a_job"
+        android:title="@string/main_flow_tab_post_a_job" />
+
+</menu>

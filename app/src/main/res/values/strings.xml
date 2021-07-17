@@ -5,6 +5,13 @@
     <string name="error_common">Something went wrong. Please, try again.</string>
     <!--endregion-->
 
+    <!--    Main Flow   -->
+    <string name="main_flow_tab_home">Home</string>
+    <string name="main_flow_tab_explorer">Explorer</string>
+    <string name="main_flow_tab_net_of_nets">Net of Nets</string>
+    <string name="main_flow_tab_activity">Activity</string>
+    <string name="main_flow_tab_post_a_job">Post a Job</string>
+
     <!--Main-->
     <string name="main_lower_bound">Lower bound</string>
     <string name="main_bound_error">field should be filled</string>

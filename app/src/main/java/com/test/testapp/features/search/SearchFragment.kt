@@ -8,7 +8,7 @@ import com.test.testapp.R
 import com.test.testapp.base.fragment.BaseFragment
 import com.test.testapp.base.properties.bind
 import com.test.testapp.base.properties.bindLoader
-import com.test.testapp.ext.initDefaultInsetesFragment
+import com.test.testapp.ext.initDefaultInsetsFragment
 import com.test.testapp.features.search.adapter.CommentAdapter
 import kotlinx.android.synthetic.main.fragment_search.*
 import org.koin.android.viewmodel.ext.android.viewModel
@@ -87,6 +87,6 @@ class SearchFragment : BaseFragment(R.layout.fragment_search) {
     }
 
     private fun initInsets() {
-        initDefaultInsetesFragment(v_root)
+        initDefaultInsetsFragment(v_root)
     }
 }
