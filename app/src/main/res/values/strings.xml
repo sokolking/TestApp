@@ -29,4 +29,9 @@
     <string name="comment_item_body">Body: %s</string>
     <!--endregion-->
 
+    <!--Explorer-->
+    <string name="explorer_title">Explorer</string>
+    <string name="search_hint">Senior Project Manager, London</string>
+    <!--endregion-->
+
 </resources>

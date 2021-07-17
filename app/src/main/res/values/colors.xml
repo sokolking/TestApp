@@ -17,4 +17,8 @@
     <color name="text_color">#030405</color>
 
     <color name="flush_orange">#FF7A00</color>
+
+    <color name="search_color">#1A95A4AC</color>
+    <color name="search_hint_color">#AFB1BF</color>
+    <color name="notification_background_color">#3CE87C</color>
 </resources>

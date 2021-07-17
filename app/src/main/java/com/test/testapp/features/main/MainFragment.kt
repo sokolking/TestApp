@@ -39,26 +39,12 @@ class MainFragment : BaseFragment(R.layout.fragment_main) {
     private fun bindProperties() {
         with(vm.state) {
             bindLoader(loading, v_loading)
-            bind(showLowerError) {
-                til_lower_bound.showTextInputError(it.first, it.second)
-            }
-            bind(showUpperError) {
-                til_upper_bound.showTextInputError(it.first, it.second)
-            }
+
         }
     }
 
     private fun initListeners() {
-        et_lower_bound.afterTextChanged(til_lower_bound) {
-            vm.changeLowerBound(it?.toString() ?: "")
-        }
-        et_upper_bound.afterTextChanged(til_upper_bound) {
-            vm.changeUpperBound(it?.toString() ?: "")
-        }
-        btn_search.setOnClickListener {
-            hideKeyboard()
-            vm.onSearchButtonClicked()
-        }
+
     }
 
     private fun initInsets() {
