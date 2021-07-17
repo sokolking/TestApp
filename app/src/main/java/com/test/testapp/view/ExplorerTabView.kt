@@ -4,6 +4,7 @@ import android.content.Context
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.widget.LinearLayout
+import com.test.common.ExplorerTabItem
 import com.test.testapp.R
 import com.test.testapp.enum.ExplorerTabs
 import kotlinx.android.synthetic.main.view_explorer_tab.view.*
@@ -14,10 +15,13 @@ class ExplorerTabView @JvmOverloads constructor(
     defStyle: Int = 0,
 ) : LinearLayout(context, attrs, defStyle) {
 
+    var onItemSelected: (ExplorerTabItem) -> Unit = {}
+
     init {
         LayoutInflater.from(context).inflate(R.layout.view_explorer_tab, this)
         v_find_jobs.apply {
             onItemSelected = {
+                it.let(this@ExplorerTabView.onItemSelected)
                 this@ExplorerTabView.v_find_jobs.isSelected(true)
                 this@ExplorerTabView.v_help_others.isSelected(false)
                 this@ExplorerTabView.v_find_candidates.isSelected(false)
@@ -25,6 +29,7 @@ class ExplorerTabView @JvmOverloads constructor(
         }.render(ExplorerTabs.FIND_JOBS.explorerTabItem)
         v_help_others.apply {
             onItemSelected = {
+                it.let(this@ExplorerTabView.onItemSelected)
                 this@ExplorerTabView.v_find_jobs.isSelected(false)
                 this@ExplorerTabView.v_help_others.isSelected(true)
                 this@ExplorerTabView.v_find_candidates.isSelected(false)
@@ -32,6 +37,7 @@ class ExplorerTabView @JvmOverloads constructor(
         }.render(ExplorerTabs.HELP_OTHERS.explorerTabItem)
         v_find_candidates.apply {
             onItemSelected = {
+                it.let(this@ExplorerTabView.onItemSelected)
                 this@ExplorerTabView.v_find_jobs.isSelected(false)
                 this@ExplorerTabView.v_help_others.isSelected(false)
                 this@ExplorerTabView.v_find_candidates.isSelected(true)

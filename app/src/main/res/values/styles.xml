@@ -27,4 +27,11 @@
         <item name="android:textColor">@color/text_color</item>
     </style>
 
+    <style name="DesignLibrary.CardView">
+        <item name="cardBackgroundColor">@color/white</item>
+        <item name="elevation">8dp</item>
+        <item name="useCompatPadding">true</item>
+        <item name="cardCornerRadius">10dp</item>
+    </style>
+
 </resources>
